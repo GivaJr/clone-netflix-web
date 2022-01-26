@@ -13,6 +13,7 @@ box-sizing: border-box;
 body{
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .logo{
@@ -33,8 +34,51 @@ header nav a{
     text-decoration: none;
     color: #AAAA;
     margin-right: 10px;
+    font-family: 'Arial black';
 }
 
 header nav a:hover{
     color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 20px;
+    background: url('/img/capaPeakyB.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+margin-bottom: 70px;
+}
+
+.filme-principal .titulo{
+    font-size: 50px;
+}
+
+.filme-principal .botao{
+
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px ;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.filme-principal .contanier{
+    width: 70%;
 }
